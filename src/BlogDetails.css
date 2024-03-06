@@ -1,0 +1,31 @@
+.blog-details button {
+    margin-left: 90%;
+    padding: 0;
+    border: none;
+    background-color: inherit;
+}
+
+.blog-details button:hover {
+    cursor: pointer;
+}
+
+.blog-details button span {
+    color: lightsalmon;
+    font-size: 36px;
+}
+
+.blog-details button:hover span {
+    color: salmon;
+}
+
+.blog-details .filled-button {
+  display: none;
+}
+
+.blog-details button:hover .outlined-button {
+  display: none;
+}
+
+.blog-details button:hover .filled-button {
+  display: inline;
+}

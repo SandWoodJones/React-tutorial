@@ -1,13 +1,209 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    margin: 0;
+    font-family: "Pixelify Sans";
+    color: red;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.outer-div {
+    padding-bottom: 2px;
+    border-bottom: 2px solid purple;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.navbar {
+    padding: 20px 20px 5px 20px;
+    border-bottom: 2px solid purple;
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.navbar h1 {
+    font-family: "Jacquarda Bastarda 9";
+    font-size: 36px;
+    color: blue;
+}
+
+.navbar .links {
+    margin-left: auto;
+}
+
+.navbar a {
+    margin-left: 16px;
+    text-decoration: none;
+    padding: 3px 6px;
+    font-size: 1.5em;
+}
+
+.navbar a.create-blog {
+    background-color: pink;
+    border-radius: 20px;
+}
+
+.navbar a:hover {
+    color: cyan;
+    text-decoration: solid underline;
+}
+
+.navbar a.create-blog:hover {
+    background-color: brown;
+}
+
+.content {
+    max-width: 750px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.error-message {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.blog-list {
+    border-left: solid green;
+}
+
+.blog-list a {
+    text-decoration: none;
+}
+
+.blog-preview {
+    display: flex;
+    margin: 10px 5px;
+    border-left: solid green;
+    padding: 5px 0 5px 10px;
+}
+
+.blog-preview:hover {
+    box-shadow: 1px 3px 5px rgba(0, 128, 0, 0.5);
+}
+
+.blog-preview h2 {
+    font-size: 26px;
+    margin: auto 0;
+    color: blueviolet;
+}
+
+.blog-preview p {
+    margin: auto 10px;
+    color: gray;
+}
+
+.blog-details .blog-heading {
+    text-align: center;
+    display: flex;
+}
+
+.blog-heading h2 {
+    font-size: 1.8em;
+    color: #f1356d;
+    margin: auto 0 auto auto;
+}
+
+.blog-heading h3 {
+    font-size: 1.2em;
+    margin: auto auto auto 10px;
+    color: burlywood;
+}
+
+.blog-details .blog-body {
+    margin: 20px 0;
+    font-size: 16pt;
+}
+
+.create {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.create h2 {
+    color: darkslateblue;
+    margin-bottom: 30px;
+}
+
+.create-input {
+    display: flex;
+}
+
+.create-input label {
+    text-align: left;
+    white-space: nowrap;
+    margin: auto 0;
+    padding: 15px 0;
+}
+
+.create-input input, .create-input textarea, .create-input select {
+    width: 100%;
+    padding: 6px 10px;
+    margin: auto 0 auto 20px;
+    border: 2px solid saddlebrown;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.create-input textarea {
+    margin: 0;
+    resize: vertical;
+}
+
+.create button {
+    margin: 20px;
+    background: fuchsia;
+    color: gold;
+    border: 0;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.lds-dual-ring {
+    margin: 15px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+
+.lds-dual-ring:after {
+    content: " ";
+    display: block;
+    border: 6px solid indigo;
+    width: 20px;
+    height: 20px;
+    margin: 4px;
+    border-radius: 50%;
+    border-color: indigo transparent indigo transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.not-found {
+    text-align: center;
+}
+
+.not-found h2 {
+    font-size: 9em;
+}
+
+.not-found h3 {
+    font-size: 2em;
+}
+
+.not-found a {
+    color: blue;
+    margin: 30px 0;
+    display: block;
+    font-size: 3em;
 }
